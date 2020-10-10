@@ -1,5 +1,7 @@
 package algorithms.leetcode;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class MaxDistanceInArray {
@@ -57,5 +59,19 @@ public class MaxDistanceInArray {
             max = Math.max(max,tempMax);
         }
         return maxDistance;
+    }
+
+    public static void main(String[] args) {
+
+        MaxDistanceInArray maxDistanceInArrayObj = new MaxDistanceInArray();
+
+        List<Integer> row1 = Arrays.asList(1,4);
+        List<Integer> row2 = Arrays.asList(-100,-30);
+        List<Integer> row3 = Arrays.asList(20,60,80);
+        List<Integer> row4 = Arrays.asList(-180,200,300);
+        List<Integer> row5 = Arrays.asList(-1000);
+
+        List<List<Integer>> input = new ArrayList<List<Integer>>(){{add(row1);add(row2);add(row3);add(row4);add(row5);}};
+        System.out.println(maxDistanceInArrayObj.maxDistance(input));
     }
 }
