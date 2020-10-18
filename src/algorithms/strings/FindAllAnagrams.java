@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * https://leetcode.com/problems/find-all-anagrams-in-a-string/submissions/
- * Time Complexity is O(n)
+ * Time Complexity is O(n) --  n is the length of string s
  * Space Complexity is O(1)
  */
 public class FindAllAnagrams {
@@ -15,7 +15,7 @@ public class FindAllAnagrams {
         Integer[] countCharacterInPattern = new Integer[26];
         List<Integer> indices =new ArrayList<>();
 
-        if(null == s || null ==p || s.length() ==0 || p.length() ==0)
+        if(null == s || null ==p || s.length() ==0 || p.length() ==0 || s.length()<p.length())
             return indices;
 
         int total=p.length();
