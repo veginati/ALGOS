@@ -28,8 +28,8 @@ public class PerfectSquare {
         if(number ==0 )
             return 0;
 
-        if(index<0)
-            return  number;
+        if(index<=1)
+            return number;
 
         if(null!=cache[number]){
             return cache[number];
