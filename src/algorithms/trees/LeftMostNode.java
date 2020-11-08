@@ -17,6 +17,8 @@ public class LeftMostNode {
 
         if(null == node)
             return;
+        // In order to print a value, we can keep track of max level so far whether
+        // to print or not, this is so simple instead of using set.
         if(coll.size()<(1+depth))
             coll.add(node.val);
         preOrderTree(node.left,coll,depth+1);
