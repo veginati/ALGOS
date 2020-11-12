@@ -1,5 +1,11 @@
 package algorithms.trees;
 
+/**
+ * https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/
+ *
+ * Time complexity O(n)
+ * Space complexity is O(n) in case of skewwed binary search tree
+ */
 public class ConstructTreePreOrder {
     private static int index =0;
     public static TreeNode bstFromPreorder(int[] preorder) {
