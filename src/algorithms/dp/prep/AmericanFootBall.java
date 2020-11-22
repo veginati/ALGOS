@@ -85,6 +85,6 @@ public class AmericanFootBall {
         System.out.println("-------------------------------------------------");
         System.out.println(findWaysII(8));
         System.out.println(findWaysII(15));
-        System.out.println(findWays(30));
+        System.out.println(findWaysII(30));
     }
 }
