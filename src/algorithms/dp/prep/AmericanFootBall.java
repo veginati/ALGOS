@@ -25,11 +25,7 @@ public class AmericanFootBall {
         //base case, not playing is the base case.
         scores[0]=1;
         for(int i=2;i<=number;i++){
-
-            if(i>=2){
-                scores[i]+=scores[i-2];
-            }
-
+            scores[i]+=scores[i-2];
             if(i>=3){
                 scores[i]+=scores[i-3];
             }
@@ -60,11 +56,7 @@ public class AmericanFootBall {
         //base case, not playing is the base case.
         scores[0]=1;
         for(int i=2;i<=number;i++){
-
-            if(i>=2){
-                scores[i%7]=scores[(i-2)%7];
-            }
-
+            scores[i%7]=scores[(i-2)%7];
             if(i>=3){
                 scores[i%7]+=scores[(i-3)%7];
             }
