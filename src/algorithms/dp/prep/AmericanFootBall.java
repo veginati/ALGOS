@@ -16,7 +16,7 @@ public class AmericanFootBall {
      */
     public static int findWays(int number){
 
-        if(number<2){
+        if(number<0){
             return 0;
         }
 
@@ -47,7 +47,7 @@ public class AmericanFootBall {
      */
     public static int findWaysII(int number){
 
-        if(number<2){
+        if(number<0){
             return 0;
         }
 
@@ -71,10 +71,12 @@ public class AmericanFootBall {
 
     public static void main(String[] args) {
 
+        System.out.println(findWays(0));
         System.out.println(findWays(8));
         System.out.println(findWays(15));
         System.out.println(findWays(30));
         System.out.println("-------------------------------------------------");
+        System.out.println(findWays(0));
         System.out.println(findWaysII(8));
         System.out.println(findWaysII(15));
         System.out.println(findWaysII(30));
