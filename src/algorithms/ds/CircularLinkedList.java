@@ -15,6 +15,10 @@ class Node {
     }
 };
 
+/**
+ * Time complexity is O(n), n is the number of nodes.
+ * Space Complexity is O(1), two pointers used.
+ */
 public class CircularLinkedList {
     public Node insert(Node head, int val) {
 
