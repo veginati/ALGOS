@@ -19,6 +19,14 @@ public class GraphValidTree {
 
         // build a graph using adj list
 
+        //edge cases
+        if (n <= 1) {
+            return true;
+        }
+        if (edges.length != n - 1) {
+            return false;
+        }
+
         List<List<Integer>> graph = new ArrayList<>(n);
 
         for(int i=0;i<n;i++)
