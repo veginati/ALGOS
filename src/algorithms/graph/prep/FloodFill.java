@@ -1,5 +1,8 @@
 package algorithms.graph.prep;
 
+/**
+ * Flood Fill - single island- starting with source row & source col
+ */
 public class FloodFill {
     int[][] dirs ={{0,1},{1,0},{0,-1},{-1,0}};
 
