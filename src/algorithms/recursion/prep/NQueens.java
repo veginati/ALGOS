@@ -20,7 +20,7 @@ public class NQueens {
         }
 
         for(int i=0;i<n;i++){
-            if(!isAttached(row,i,queensPlaced)){
+            if(!isAttacked(row,i,queensPlaced)){
                 queensPlaced[row]=i;
                 generateValidPlacements(n,queensPlaced,row+1,output);
                 queensPlaced[row]=-1;
@@ -28,7 +28,7 @@ public class NQueens {
         }
     }
 
-    public boolean isAttached(int row, int col, int[] queensPlaced){
+    public boolean isAttacked(int row, int col, int[] queensPlaced){
 
         // checking diagonal and columnar manner
         for(int i=0;i<row;i++){
