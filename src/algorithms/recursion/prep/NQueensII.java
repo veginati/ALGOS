@@ -1,5 +1,9 @@
 package algorithms.recursion.prep;
 
+/**
+ * Time complexity is O(n!)
+ * T(n) = n * T(n-1) +n^2
+ */
 public class NQueensII {
 
     public int totalNQueens(int n) {
