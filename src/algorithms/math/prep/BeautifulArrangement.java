@@ -1,7 +1,7 @@
 package algorithms.math.prep;
 
 /**
- * Time complexity O(n!)
+ * Time complexity O(k), k is the number of valid permutations.
  * Space is O(n) recursion stack
  * Leetcode 526
  */
