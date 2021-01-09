@@ -1,4 +1,4 @@
-package algorithms.dp.trees;
+package algorithms.dp;
 
 /**
  *  prefix array build O(mn)
