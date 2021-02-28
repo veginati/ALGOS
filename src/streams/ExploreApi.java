@@ -21,5 +21,7 @@ public class ExploreApi {
 
         List<String> listObj = Arrays.stream(data).mapToObj(i->data1[i]).collect(Collectors.toList());
         System.out.println(listObj);
+
+        System.out.println(String.join("\n",new String[]{"a","b","c"}));
     }
 }
