@@ -2,7 +2,7 @@ package algorithms.alpha;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//LC-2870
 public class MinOperatins {
 
     public int minOperations(int[] nums) {
